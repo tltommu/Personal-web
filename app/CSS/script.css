@@ -5,7 +5,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #007BFF;
     background-image: url('https://giphy.com/gifs/code-ko7twHhomhk8E'); /* Replace with your image URL */
     background-size: cover;
     background-repeat: no-repeat;
