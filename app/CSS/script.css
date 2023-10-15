@@ -1,12 +1,33 @@
 body {
-    margin: 0; 
-    font-family:Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    overflow: hidden; 
-}
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url('https://giphy.com/embed/ko7twHhomhk8E'); /* URL of the GIF */
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .content {
+        z-index: 1;
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .content h1 {
+        font-size: 2em;
+    }
+
+    .content p {
+        font-size: 1.2em;
+    }
+
+    .content a {
+        color: #ff7e5f;
+        text-decoration: none;
+    }
 
 .background-container {
     width: 100%;
