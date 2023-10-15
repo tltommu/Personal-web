@@ -1,78 +1,48 @@
-body {
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        overflow: hidden;
-        background-image: url('https://giphy.com/embed/ko7twHhomhk8E'); /* URL of the GIF */
-        background-size: cover;
-        background-position: center;
-        position: relative;
-    }
-    .content {
-        z-index: 1;
-        position: relative;
-        text-align: center;
-        color: white;
-    }
-    .content h1 {
-        font-size: 2em;
-    }
-
-    .content p {
-        font-size: 1.2em;
-    }
-
-    .content a {
-        color: #ff7e5f;
-        text-decoration: none;
-    }
-
-.background-container {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none; 
+.tech-stack {
+    list-style-type: none;
+    padding: 0;
+    transform: translateY(-20px);
+    list-style-position: inside;
 }
 
-.background-container iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+.tech-stack li {
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(-10px);
+    text-align: left;
 }
 
-.content {
-    z-index: 1;
-    position: relative;
-}
-
-
-.info-card {
-    max-width: 400px;
-    padding: 20px;
-    background-color: black;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.tech-stack ul {
+    list-style-type: square;
+    margin-bottom: 10px;
     text-align: center;
 }
-
-.intro-text {
-    color: #333;
-    margin-bottom: 20px;
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
 }
 
-.beta-message {
-    font-style: italic;
-    color: #888;
+.background-container::before {
+    content: "";
+    background-image: url('https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif'); /* Replace with your Giphy URL */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px); /* Add a blur effect if desired */
 }
 
-.email-link {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
+.info-card {
+       color: rgba(255, 255, 255, 0.8);
+  position:center
 }
+
+/* Add any additional CSS styles here */
