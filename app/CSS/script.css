@@ -29,7 +29,7 @@
 
 .background-container::before {
     content: "";
-    background-image: url('https://media.giphy.com/media/ko7twHhomhk8E/giphy.gif'); /* Replace with your Giphy URL */
+    background-image: url('wp3284844-backgrounds-for-html-gif.gif'); /* Replace with your Giphy URL */
     background-size: cover;
     background-position: center;
     position: absolute;
