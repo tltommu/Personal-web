@@ -32,7 +32,14 @@
 </head>
 <body>
     <div id="root"></div>
-
+    <div style="width:100%;height:0;padding-bottom:56%;position:relative;">
+        <iframe src="https://giphy.com/embed/ko7twHhomhk8E" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen>
+        </iframe>
+    </div>
+    <p>
+        <a href="https://giphy.com/gifs/code-ko7twHhomhk8E">via GIPHY</a>
+    </p>
+    
     <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
@@ -142,7 +149,7 @@
                         React.createElement(
                             'div',
                             { className: 'extra-section', onClick: toggleTechStack, style: { cursor: 'pointer' } },
-                            'Tech Stack'
+                            'Tech Stack (click me)'
                         ),
                         showTechStack && React.createElement(
                             'ul',
@@ -150,7 +157,7 @@
                             React.createElement(
                                 'li',
                                 null,
-                                'Programming Languages(click me)',
+                                'Programming Languages',
                                 React.createElement(
                                     'ul',
                                     null,
