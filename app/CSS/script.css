@@ -44,5 +44,11 @@
        color: rgba(255, 255, 255, 0.8);
   position:center
 }
+.content {
+    z-index: 1;
+    position: relative;
+    padding: 20px;
+    color: white; /* Set text color to white */
+}
 
 /* Add any additional CSS styles here */
