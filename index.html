@@ -30,8 +30,9 @@
         
     </style>
 </head>
-
 <body>
+    <div id="root"></div>
+
     <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
@@ -141,7 +142,7 @@
                         React.createElement(
                             'div',
                             { className: 'extra-section', onClick: toggleTechStack, style: { cursor: 'pointer' } },
-                            'Tech Stack (click me)'
+                            'Tech Stack(click me)'
                         ),
                         showTechStack && React.createElement(
                             'ul',
