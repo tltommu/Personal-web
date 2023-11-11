@@ -27,14 +27,66 @@
       padding: 20px;
       margin-top: 60px; /* Adjust this value based on the header height */
     }
+    .tech-stack {
+    list-style-type: none;
+    padding: 0;
+    transform: translateY(-20px);
+    list-style-position: inside;
+}
+
+.tech-stack li {
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(-10px);
+    text-align: left;
+}
+
+.tech-stack ul {
+    list-style-type: square;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-container::before {
+    content: "";
+    
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px); /* Add a blur effect if desired */
+}
+
+.info-card {
+       color: rgba(0, 0, 0, 0.8);
+  position:center
+}
+.content {
+    z-index: 1;
+    position: relative;
+    padding: 20px;
+    color: black; /* Set text color to black */
+}
   </style>
 <body>
     <header id="myHeader">
-        <h1>Sticky Header</h1>
+        <h1>Simple personal webpage</h1>
       </header>
     
       <section>
-        <h2>Scroll down to see the effect</h2>
+        
         
       </section>
     <div id="root"></div>
@@ -219,12 +271,14 @@ ReactDOM.render(
 );
 
 </script>
+<section>
 <form method="post">
     <label for="message">Leave a message to me:
               <textarea id="message" name="message" rows="3" cols="30" placeholder="Type in anything you want to tell me"></textarea>
             </label>
             </form>
             <input type="submit" value="Submit" />
+            </section>
 <b>The script.css is bugged right now...</b><br>
 <i>this poor web owner is fixing it...(still not fixed...)</i><br>
 </body>
