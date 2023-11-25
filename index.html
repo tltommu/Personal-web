@@ -318,6 +318,22 @@ function animateButton() {
                 }});
             }});
         }
+        function validateEmail() {
+            var emailInput = document.getElementById('email');
+            var errorMessage = document.getElementById('error-message');
+            
+            // Regular expression for a simple email validation
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (emailRegex.test(emailInput.value)) {
+                // Email is valid, you can submit the form or perform other actions here
+                errorMessage.textContent = '';
+                alert('Email is valid!'); // You can replace this with your desired action
+            } else {
+                // Email is invalid, show an error message
+                errorMessage.textContent = 'Please enter a valid email address.';
+            }
+        }
 </script>
 <section>
     
