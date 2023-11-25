@@ -22,6 +22,7 @@
       transition: top 0.3s;
     }
     section {
+      display: flex;
       padding: 20px;
       margin-top: 60px; /* Adjust this value based on the header height */
     }
@@ -110,6 +111,15 @@
 .neumorphic-button:hover {
     box-shadow: inset 3px 3px 6px #bebebe, inset -3px -3px 6px #ffffff;
 }
+     #error-message {
+            color: red;
+            margin-bottom: 16px;
+        }
+
+        #success-message {
+            color: green;
+            margin-bottom: 16px;
+        }
 </style>
 <body>
     <header id="myHeader">
@@ -321,17 +331,19 @@ function animateButton() {
         function validateEmail() {
             var emailInput = document.getElementById('email');
             var errorMessage = document.getElementById('error-message');
+            var successMessage = document.getElementById('success-message');
             
             // Regular expression for a simple email validation
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
             if (emailRegex.test(emailInput.value)) {
-                // Email is valid, you can submit the form or perform other actions here
+                // Email is valid, clear the error message and display success message
                 errorMessage.textContent = '';
-                alert('Email is valid!'); // You can replace this with your desired action
+                successMessage.textContent = 'Email successfully submitted: ' + emailInput.value;
             } else {
-                // Email is invalid, show an error message
+                // Email is invalid, show an error message in red font and clear success message
                 errorMessage.textContent = 'Please enter a valid email address.';
+                successMessage.textContent = '';
             }
         }
 </script>
@@ -351,6 +363,7 @@ function animateButton() {
     <input type="email" id="email" name="email" placeholder="Enter your email" required>
     
     <div id="error-message"></div>
+      <div id="success-message"></div>
 
     <button type="button" onclick="validateEmail()">Submit</button>
 </form></div>
