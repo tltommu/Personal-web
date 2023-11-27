@@ -67,8 +67,13 @@
     filter: blur(5px); /* Add a blur effect if desired */
 }
 .info-card {
-       color: rgba(0, 0, 0, 0.8);
-  position:left
+    .info-card {
+            color: rgba(0, 0, 0, 0.8);
+            margin-right: auto; /* Adjusted to move to the left */
+            padding: 20px;
+            box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+            transition: box-shadow 0.3s ease-in-out;
+        }
 }
 .content {
     z-index: 1;
